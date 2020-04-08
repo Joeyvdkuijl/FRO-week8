@@ -34,9 +34,20 @@ student008.les('SEC');
 student008.les('TDD');
 console.log(student008);
 
-// student008.show = function() {
-//     student008.lessen.forEach(function(element) {
-//         console.log(element);
-//     })
-// }
-// student008.show();
+
+// Toevoegen van een method (functie)
+// aan een instance (variabele van het type object)
+// Het type object is in dit geval een Student object
+// De instance is student008
+student008.show = function() {
+    student008.lessen.forEach(function(element) {
+        console.log(element);
+    })
+}
+
+student008.show();
+
+// Object.keys
+// Hiermee kun je alle keys van een object opvragen
+console.table(Object.keys(student008));
+console.table(Object.keys(student007));
